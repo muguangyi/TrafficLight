@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d5e8d4ac56c4702ae36eecd66f8a53, type: 3}
+  m_Name: AssetManifest
+  m_EditorClassIdentifier: 
+  Assets:
+  - Name: AssetManifest
+    Path: Assets/Loadable/AssetManifest.asset
+    Type: AssetManifest
+    Package: AssetManifest
+  - Name: Element/BlueCar
+    Path: Assets/Loadable/Element/BlueCar.prefab
+    Type: GameObject
+    Package: BlueCar_5a86bd225e58f4533b7431cd4e74e780.bundle
+  - Name: Element/BlueLorry
+    Path: Assets/Loadable/Element/BlueLorry.prefab
+    Type: GameObject
+    Package: BlueLorry_a4f16a890da5c1b4fba9ea55d234b307.bundle
+  - Name: Element/BlueTruck
+    Path: Assets/Loadable/Element/BlueTruck.prefab
+    Type: GameObject
+    Package: BlueTruck_a7877e1f7db7e4b5d9a482e11a8cd52e.bundle
+  - Name: Element/OrangeLorry
+    Path: Assets/Loadable/Element/OrangeLorry.prefab
+    Type: GameObject
+    Package: OrangeLorry_1cb16783eb5f1453a94b0fd4f21ba1dd.bundle
+  - Name: Element/RedCar
+    Path: Assets/Loadable/Element/RedCar.prefab
+    Type: GameObject
+    Package: RedCar_002e1328902594e3f94010ddaa7be877.bundle
+  - Name: Element/RedTruck
+    Path: Assets/Loadable/Element/RedTruck.prefab
+    Type: GameObject
+    Package: RedTruck_ddd7e7a15721041d7a2d8010589775b1.bundle
+  - Name: Element/WhiteLorry
+    Path: Assets/Loadable/Element/WhiteLorry.prefab
+    Type: GameObject
+    Package: WhiteLorry_d7d1ac565c28c6d4ea7fb5f004abe935.bundle
+  - Name: Fonts/Fonsung-211030
+    Path: Assets/Loadable/Fonts/Fonsung-211030.ttf
+    Type: Font
+    Package: Fonsung-211030_8bb5b2edd8dbe21498076597bee540d4.bundle
+  - Name: IL/Script.il
+    Path: Assets/Loadable/IL/Script.il.bytes
+    Type: TextAsset
+    Package: Script.il_276d93b7b61934eb0aa1075849381d43.bundle
+  - Name: IL/Script.il.pdb
+    Path: Assets/Loadable/IL/Script.il.pdb.bytes
+    Type: TextAsset
+    Package: Script.il.pdb_eed84f320a2a348edad9a48ef8e5f240.bundle
+  - Name: UNLang/vehicle
+    Path: Assets/Loadable/UNLang/vehicle.bytes
+    Type: TextAsset
+    Package: vehicle_fc8ef48e735964e4f92bfe2378d8ce6e.bundle
+  - Name: UNLang/vehicle.bytes
+    Path: Assets/Loadable/UNLang/vehicle.bytes.layout
+    Type: DefaultAsset
+    Package: vehicle.bytes_3f137b40bfffe4fe988b22a3416011ab.bundle
+  - Name: Main.unity
+    Path: Assets/Scenes/Main.unity
+    Type: Scene
+    Package: Main_9fc0d4010bbf28b4594072e72b8655ab.bundle

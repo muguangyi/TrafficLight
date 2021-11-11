@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09c40e29ee61744188031e2661af29af, type: 3}
+  m_Name: ActionPipelineSettings
+  m_EditorClassIdentifier: 
+  pDatas:
+  - Name: Build Windows
+    StepDatas:
+    - Name: Build Script Assets
+      MethodData:
+        TypeName: Taichi.ILRuntime.Editor.ScriptEditor, Taichi.Editor, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        MethodName: Generate
+        ArgNames: []
+        ArgTypes: []
+        Args: 
+      Selected: 1
+    - Name: Build Asset Bundles
+      MethodData:
+        TypeName: Taichi.Asset.Editor.AssetBuilder, Taichi.Editor, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        MethodName: BuildAndCopy
+        ArgNames: []
+        ArgTypes:
+        - System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        - UnityEditor.BuildTarget, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        - UnityEditor.BuildAssetBundleOptions, UnityEditor.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        Args: 0b41737365744f75747075741300000000010000
+      Selected: 1
+    - Name: Build Windows Executable
+      MethodData:
+        TypeName: UnityEditor.BuildPipeline, UnityEditor.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        MethodName: BuildPlayer
+        ArgNames: []
+        ArgTypes:
+        - System.String[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        - System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        - UnityEditor.BuildTarget, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        - UnityEditor.BuildOptions, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        Args: 01000000184173736574732f5363656e65732f4d61696e2e756e6974791c4170702f57696e646f77732f547261666669634c696768742e6578651300000000000000
+      Selected: 1
+  - Name: Build Mac
+    StepDatas:
+    - Name: Build Script Assets
+      MethodData:
+        TypeName: Taichi.ILRuntime.Editor.ScriptEditor, Taichi.Editor, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        MethodName: Generate
+        ArgNames: []
+        ArgTypes: []
+        Args: 
+      Selected: 1
+    - Name: Build Asset Bundls
+      MethodData:
+        TypeName: Taichi.Asset.Editor.AssetBuilder, Taichi.Editor, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        MethodName: BuildAndCopy
+        ArgNames: []
+        ArgTypes:
+        - System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        - UnityEditor.BuildTarget, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        - UnityEditor.BuildAssetBundleOptions, UnityEditor.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        Args: 0b41737365744f75747075740200000000010000
+      Selected: 1
+    - Name: Build Mac Executable
+      MethodData:
+        TypeName: UnityEditor.BuildPipeline, UnityEditor.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        MethodName: BuildPlayer
+        ArgNames: []
+        ArgTypes:
+        - System.String[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        - System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        - UnityEditor.BuildTarget, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        - UnityEditor.BuildOptions, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        Args: 01000000184173736574732f5363656e65732f4d61696e2e756e697479184170702f4d61632f547261666669634c696768742e6170700200000000000000
+      Selected: 1
+  - Name: Build Android
+    StepDatas:
+    - Name: Build Script Assets
+      MethodData:
+        TypeName: Taichi.ILRuntime.Editor.ScriptEditor, Taichi.Editor, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        MethodName: Generate
+        ArgNames: []
+        ArgTypes: []
+        Args: 
+      Selected: 1
+    - Name: Build Asset Bundles
+      MethodData:
+        TypeName: Taichi.Asset.Editor.AssetBuilder, Taichi.Editor, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        MethodName: BuildAndCopy
+        ArgNames: []
+        ArgTypes:
+        - System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        - UnityEditor.BuildTarget, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        - UnityEditor.BuildAssetBundleOptions, UnityEditor.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        Args: 0b41737365744f75747075740d00000000010000
+      Selected: 1
+    - Name: Build Android Installer
+      MethodData:
+        TypeName: UnityEditor.BuildPipeline, UnityEditor.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        MethodName: BuildPlayer
+        ArgNames: []
+        ArgTypes:
+        - System.String[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        - System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        - UnityEditor.BuildTarget, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        - UnityEditor.BuildOptions, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        Args: 01000000184173736574732f5363656e65732f4d61696e2e756e6974791c4170702f416e64726f69642f547261666669634c696768742e61706b0d00000000000000
+      Selected: 1
+  eDatas: []

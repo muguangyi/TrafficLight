@@ -1,0 +1,17 @@
+{
+    "name": "Script",
+    "rootNamespace": "",
+    "references": [
+        "GUID:14b117a8a03c04d90b035d5ff266ea68",
+        "GUID:8b951eda82d3249a3ba08f99d39b36ba"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
